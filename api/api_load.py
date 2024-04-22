@@ -1,0 +1,1 @@
+api_server = "https://xn--80asepje.xn--p1ai/"

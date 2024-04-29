@@ -2,7 +2,8 @@ import sqlite3
 
 def registrat(username, password, name, address, tguse, sex, age):
     age = int(age)
-    conn = sqlite3.connect("db/db.sqlite")
+    conn = sqlite3.connect('C:/Users/Kevlorov/Desktop/webshit/flask/py/db.sqlite')
+    # conn = sqlite3.connect("db/db.sqlite")
     cur = conn.cursor()
 
     cur.execute(

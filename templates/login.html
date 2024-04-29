@@ -44,9 +44,7 @@ borders: top right bottom left !important
          data-style="login-form-1" id="sec-8890">
     <div class="u-clearfix u-sheet u-valign-middle u-block-2e91-2">
         <div class="u-form u-login-control u-block-2e91-24">
-            <form action="login_form" method="post"
-                  class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form"
-                  source="custom" name="form" style="padding: 10px;" data-services="">
+            <form method="post" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;" data-services="">
                 <div class="u-form-group u-form-name u-block-2e91-25">
                     <label for="username-a30d" class="u-label u-block-2e91-26">Логин *</label>
                     <input type="text" placeholder="Enter your Username" id="username-a30d" name="username"
@@ -60,21 +58,13 @@ borders: top right bottom left !important
                 {% if error %}
                 <p class="error-message">{{ error }}</p>
                 {% endif %}
-                <div class="u-form-checkbox u-form-group u-block-2e91-31">
-                    <input type="checkbox" id="checkbox-a30d" name="remember" value="On" class="u-field-input">
-                    <label for="checkbox-a30d" class="u-block-2e91-32 u-field-label" style="">Remember me</label>
-                </div>
                 <div class="u-align-left u-form-group u-form-submit u-block-2e91-33">
-                    <a href="#" class="u-btn u-btn-submit u-button-style u-block-2e91-34">Войти</a>
-                    <input type="submit" value="submit" class="u-form-control-hidden">
+                    <input type="submit" value="Войти" class="u-btn u-btn-submit u-button-style u-block-2e91-34">
                 </div>
-                <input type="hidden" value="" name="recaptchaResponse">
 
 
             </form>
         </div>
-        <a href="#"
-           class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-login-control u-login-forgot-password u-none u-text-palette-1-base u-block-2e91-21">Забыли пароль ?</a>
         <a href="registration"
            class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-login-control u-login-create-account u-none u-text-palette-1-base u-block-2e91-23">Нет аккаунта?</a>
     </div>

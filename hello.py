@@ -23,11 +23,11 @@ def main():
 def login():
     error = None
     if request.method == 'POST':
-        username = request.form['username-a30d']
-        password = request.form['password-a30d']
+        username = request.form['username']
+        password = request.form['password']
         data = check_password(username, password)
-        if data[0] == True:
-            return "вася персик"
+        if data == True:
+            return redirect("https://www.youtube.com/watch?v=-452p_9ESbM&ab_channel=FANVIDOS-%D0%9C%D0%B8%D0%BB%D1%8B%D0%B5%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B8")
         else:
             error = data[1]
             return render_template('login.html', logincss=source.add.logcss, pagecss=source.add.pagecss,
